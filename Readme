@@ -1,0 +1,28 @@
+1. 4 operations are supported
+-- DateFormatting
+-- DataFiltering
+-- CombiningColumns
+-- NewColumn based on data of existing column
+2. 4 different configuration files is needed for 4 operations mentioned above.
+3. In one execution only one operation can ne performed
+4. Every configuration file should have .properties extension.
+5. Format of every configuration file can be found from the sample file present in
+src/java/resource/configurations
+6. config file contains operation key which represents which operation needs to be performed on file.
+-- FORMAT_DATE, FILTER_DATA, COMBINE_COLUMNS, NEW_COLUMN
+
+Required Configurations:
+1. jdk 1.8
+2. maven
+
+Steps for execution:
+1. Once a project is executed user needs to provide absolute path of 3 files input, config, outfile
+separated by space
+2. Config file path should be path of the config file which operation needs to be performed on data
+
+Limitations:
+1. Data filtering options
+2. Only single operation at a time
+3. Only one column filtering, formating at one time
+4. Only .csv file as input and output file
+5. .properties file as config file
